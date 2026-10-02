@@ -142,11 +142,8 @@ GALLERY = [
 ]
 
 
-GALLERY_PNG = {7, 8, 9, 12}  # these originals were uploaded as PNG
-
-
 def gallery_file(n):
-    return img(f"gallery-{n:02d}.{'png' if n in GALLERY_PNG else 'jpg'}")
+    return img(f"gallery-{n:02d}.jpg")
 
 
 def gallery():
